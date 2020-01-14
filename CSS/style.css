@@ -25,10 +25,11 @@
 
 .calendar-row .calendar-block {
   content: "";
-  height: 10vh;
-  width: 10vw;
+  height: 4vh;
+  width: 4vw;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  border-style: solid;
   border-color: #000000;
 }
 /*# sourceMappingURL=style.css.map */
