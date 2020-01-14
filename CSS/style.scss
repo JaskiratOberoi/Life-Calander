@@ -11,13 +11,14 @@
   }
 }
 
-p {
+.calendar-row {
   display: flex;
 
   .calendar-block {
+    content: "";
     height: 10vh;
     width: 10vw;
     box-sizing: border-box;
-    border-color: blue($color: #000000);
+    border-color: #000000;
   }
 }
