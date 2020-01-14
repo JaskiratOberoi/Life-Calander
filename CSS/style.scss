@@ -16,10 +16,12 @@
 
   .calendar-block {
     content: "";
-    height: 4vh;
-    width: 4vw;
+    height: 1rem;
+    width: 1rem;
     box-sizing: border-box;
     border-style: solid;
     border-color: #000000;
+    border-radius: 4px;
+    margin: 0.1rem 0.1rem;
   }
 }
