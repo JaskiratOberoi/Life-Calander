@@ -13,7 +13,7 @@
 
 .calendar-row {
   display: flex;
-
+  flex-wrap: nowrap;
   .calendar-block {
     content: "";
     height: 1rem;

@@ -12,11 +12,13 @@ function filledboxes(filled) {
 }
 function blankboxes(blank) {
   var i;
-  for (i = 0; i < blank; i++) {
-    calendar_blank_element += `<div class="calendar-block"></div>`;
+  for (j = 0; j < 10; j++) {
+    for (i = 0; i < 2; i++) {
+      calendar_blank_element += `<div class="calendar-block"></div>`;
+    }
+    calendar_blank_element += `<br><br>`;
   }
-
-  filledboxes(10);
+  filledboxes(1);
 }
 
 window.onload = blankboxes(10);
