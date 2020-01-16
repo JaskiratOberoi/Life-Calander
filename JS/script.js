@@ -1,24 +1,39 @@
-var calendar_blank_element = "",
-  calendar_filled_element = "";
+var calendar_blank_element = "";
+var calendar_filled_element = "";
 
 function filledboxes(filled) {
-  var i;
-  for (i = 0; i < filled; i++) {
+  var j;
+  for (j = 0; j < filled; j++) {
     calendar_filled_element += `<div class="calendar-block-filled"></div>`;
   }
-
-  var calendar_boxes = calendar_blank_element + calendar_filled_element;
-  document.getElementById("rows").innerHTML = calendar_boxes;
+  return calendar_filled_element;
 }
+
 function blankboxes(blank) {
   var i;
-  for (j = 0; j < 10; j++) {
-    for (i = 0; i < 2; i++) {
-      calendar_blank_element += `<div class="calendar-block"></div>`;
-    }
-    calendar_blank_element += `<br><br>`;
+
+  for (i = 0; i < blank; i++) {
+    calendar_blank_element += `<div class="calendar-block"></div>`;
   }
-  filledboxes(1);
+  return calendar_blank_element;
 }
 
-window.onload = blankboxes(10);
+function valueInsert(leftWeeks, weekCount) {
+  calendar_empty = blankboxes(leftWeeks);
+  calendar_full = filledboxes(weekCount);
+  var calendar_boxes = calendar_full + calendar_empty;
+  document.getElementById("rows").innerHTML = calendar_boxes;
+}
+
+function calendarCreation(age) {
+  var weekCount = age * 12;
+  var leftWeeks = 900 - weekCount;
+  valueInsert(leftWeeks, weekCount);
+}
+
+function ageImporter() {
+  var userAge = document.getElementById(agevalue);
+  calendarCreation(userAge);
+}
+
+document.getElementById("ageButton").onclick = ageImporter;
