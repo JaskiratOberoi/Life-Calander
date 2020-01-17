@@ -7,16 +7,22 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Life Calendar</title>
     <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../CSS/style.css" />
+    <link rel="stylesheet" href="/CSS/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet" />
 </head>
 
 <body>
     <div class="title">
         <h1>Life Calendar</h1>
     </div>
+    <div class="caption">
+        <h4>
+            Each box represents one month of a 85 years long life. The dark ones have already been used and the light ones are all that you're left with. Live everyday as if its your last!
+        </h4>
+    </div>
     <div class="age">
         <div>
-            <input type="text" name="age" id="agevalue" />
+            <input type="text" name="age" id="agevalue" placeholder="Enter your age" />
         </div>
         <div>
             <button class="button" id="ageButton" onclick="ageImporter()">
@@ -26,12 +32,9 @@
     </div>
     <div class="calendar">
         <p></p>
-        <div class="calendar-row" id="rows">
-            <div class="calendar-block"></div>
-            <div class="calendar-block-filled"></div>
-        </div>
+        <div class="calendar-row" id="rows"></div>
     </div>
 </body>
-<script src="../JS/script.js"></script>
+<script src="/JS/script.js"></script>
 
 </html>

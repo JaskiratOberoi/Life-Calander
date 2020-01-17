@@ -28,7 +28,7 @@ function valueInsert(leftWeeks, weekCount) {
 
 function calendarCreation(age) {
     var weekCount = age * 12;
-    var leftWeeks = 900 - weekCount;
+    var leftWeeks = 1020 - weekCount;
     valueInsert(leftWeeks, weekCount);
 }
 
