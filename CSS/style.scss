@@ -1,77 +1,88 @@
 * {
-  font-family: "Lobster", cursive;
+    font-family: "Lobster", cursive;
 }
 
 .title {
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  h1 {
-    font-size: 3rem;
-  }
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    h1 {
+        font-size: 3rem;
+    }
 }
 
 .calendar-row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 10rem;
-  .calendar-block {
-    content: "";
-    height: 1rem;
-    width: 1rem;
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: #000000;
-    border-radius: 4px;
-    margin: 0 0.1rem;
-    margin-top: 0.1rem;
-  }
-  .calendar-block-filled {
-    content: "";
-    height: 1rem;
-    width: 1rem;
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: #000000;
-    border-radius: 4px;
-    margin: 0 0.1rem;
-    margin-top: 0.1rem;
-    background-color: #1d1d1d;
-  }
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 10rem;
+    .calendar-block {
+        content: "";
+        height: 1rem;
+        width: 1rem;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #000000;
+        border-radius: 4px;
+        margin: 0 0.1rem;
+        margin-top: 0.1rem;
+    }
+    .calendar-block-filled {
+        content: "";
+        height: 1rem;
+        width: 1rem;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #000000;
+        border-radius: 4px;
+        margin: 0 0.1rem;
+        margin-top: 0.1rem;
+        background-color: #1d1d1d;
+    }
 }
 
 .age {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
-  div {
     display: flex;
-    flex-shrink: inherit;
+    flex-direction: column;
     align-content: center;
     justify-content: center;
-    margin-top: 1rem;
-
-    input {
-      width: 30rem;
-      height: 2rem;
-      border-radius: 5px;
-      font-size: 2rem;
-      text-align: center;
+    div {
+        display: flex;
+        flex-shrink: inherit;
+        align-content: center;
+        justify-content: center;
+        margin-top: 1rem;
+        input {
+            width: 30rem;
+            height: 2rem;
+            border-radius: 5px;
+            font-size: 2rem;
+            text-align: center;
+        }
     }
-  }
-  .button {
-    margin: 1rem 50vw;
-    padding: 0.5rem 0;
-    height: 3rem;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 1.5rem;
-    font-weight: 500;
-    background-color: white;
-    box-sizing: border-box;
-    border-style: solid;
-    border-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-  }
+    .button {
+        margin: 1rem 30vw;
+        padding: 0.5rem 10vw;
+        height: 3rem;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+        background-color: white;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .calendar-row {
+        margin: 0 0rem;
+    }
+    .age {
+        div {
+            input {
+                width: 15rem;
+            }
+        }
+    }
 }
