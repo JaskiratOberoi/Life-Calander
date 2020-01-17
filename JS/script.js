@@ -35,4 +35,5 @@ function calendarCreation(age) {
 function ageImporter() {
     var userAge = document.getElementById("agevalue").value;
     calendarCreation(userAge);
+    document.getElementById("cr").className = "clear";
 }
