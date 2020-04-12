@@ -1,51 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Life Calendar</title>
-    <link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/CSS/style.css" />
-    <link href="https://fonts.googleapis.com/css?family=Gayathri&display=swap" rel="stylesheet" />
-    <style>
-        img[alt="www.000webhost.com"] {
-            display: none;
-        }
-    </style>
-    <!-- ^only for 000webhost  -->
-</head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <div class="title">
-        <h1>Life Calendar</h1>
+      <h1>Life Calendar</h1>
     </div>
     <div class="caption">
-        <h4>
-            Each box represents one month of a 85 years long life. The dark ones have already been used and the light ones are all that you're left with. Live everyday as if its your last!
-        </h4>
+      <h4>
+        Each box represents one month of a 85 years long life. The dark ones
+        have already been used and the light ones are all that you're left with.
+        Live everyday as if its your last!
+      </h4>
     </div>
     <div class="age">
-        <div>
-            <input type="text" name="age" id="agevalue" placeholder="Enter your age" />
-        </div>
-        <div>
-            <button class="button" id="ageButton" onclick="ageImporter()">
+      <div>
+        <input
+          type="text"
+          name="age"
+          id="agevalue"
+          placeholder="Enter your age"
+        />
+      </div>
+      <div>
+        <button class="button" id="age-btn">
           CALCULATE
         </button>
-        </div>
+      </div>
     </div>
     <div class="calendar">
-        <p></p>
-        <div class="calendar-row" id="rows"></div>
+      <p></p>
+      <div class="calendar-row" id="rows"></div>
     </div>
     <footer>
-        <div class="copyright" id="cr">
-            Created By Jaskirat Singh Oberoi ©2020
-        </div>
+      <div class="copyright" id="cr">
+        Jaskirat Singh Oberoi © Hansei By Design 2020
+      </div>
     </footer>
     <script src="/JS/script.js"></script>
-</body>
-
+  </body>
 </html>

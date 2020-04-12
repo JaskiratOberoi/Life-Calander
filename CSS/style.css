@@ -1,53 +1,54 @@
 * {
-  font-family: "Lobster", cursive;
+  font-family: "Roboto Slab", serif;
+  color: #1f1f1f;
+}
+
+body {
+  background: #f1f1f1;
+  color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  overflow-y: scroll;
 }
 
 .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
 
 .title h1 {
-  font-size: 3rem;
+  margin: 0;
+  font-size: 5rem;
 }
 
 .caption {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-content: center;
+  justify-content: center;
   text-align: center;
 }
 
 .caption h4 {
-  font-family: "Gayathri", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .calendar-row {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 10rem;
+  transition: all 0.5s ease;
 }
 
 .calendar-row .calendar-block {
   content: "";
   height: 1rem;
   width: 1rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-style: solid;
   border-color: #000000;
   border-radius: 4px;
@@ -59,8 +60,7 @@
   content: "";
   height: 1rem;
   width: 1rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   border-style: solid;
   border-color: #000000;
   border-radius: 4px;
@@ -70,68 +70,61 @@
 }
 
 .age {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .age div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-negative: inherit;
-      flex-shrink: inherit;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-shrink: inherit;
+  align-content: center;
+  justify-content: center;
   margin-top: 1rem;
 }
 
 .age div input {
   width: 30rem;
-  height: 2rem;
-  border-radius: 5px;
+  height: 3rem;
+  border: none;
   font-size: 1.8rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   text-align: center;
+  border-radius: 10px;
+  background: #f1f1f1;
+  box-shadow: inset 5px 5px 10px #dedede, inset -5px -5px 10px #ffffff;
 }
 
 .age .button {
-  margin: 1rem 30vw;
-  padding: 0.5rem 10vw;
+  margin: 1rem;
+  padding: 0.5rem 1rem;
   height: 3rem;
+  width: 25vw;
+  text-align: center;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.5rem;
-  font-weight: 500;
-  background-color: white;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-style: solid;
-  border-color: rgba(0, 0, 0, 0.8);
+  font-weight: 700;
+  box-sizing: border-box;
+  border: none;
   border-radius: 10px;
+  background: #f1f1f1;
+  box-shadow: 5px 5px 10px #dedede, -5px -5px 10px #ffffff;
+}
+
+.age .button:hover {
+  border-radius: 10px;
+  background: #f1f1f1;
+  box-shadow: inset 5px 5px 10px #eaeaea, inset -5px -5px 10px #f8f8f8;
 }
 
 .copyright {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .clear {
@@ -140,10 +133,19 @@
 
 @media only screen and (max-width: 600px) {
   .calendar-row {
-    margin: 0 0rem;
+    margin: 1rem;
+  }
+  .title h1 {
+    margin: 1rem;
+  }
+  .caption h4 {
+    text-align: justify;
+    margin: 1rem;
   }
   .age div input {
-    width: 15rem;
+    width: 80vw;
+  }
+  .age div .button {
+    width: 80vw;
   }
 }
-/*# sourceMappingURL=style.css.map */
